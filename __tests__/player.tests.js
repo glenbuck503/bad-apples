@@ -16,7 +16,7 @@ describe('Player', () => {
   });
   test('should minus from player health', () => {
     player.takeDamage(25);
-    expect(player.health).toEqual(26)
+    expect(player.health).toEqual(75)
   })
 });
   
