@@ -20,13 +20,13 @@ describe('Player', () => {
   });
   test('should add item to inventory', () => {
     player.addItem("sword");
-    expect(player.inventory).toEqual(["sword"])
+    expect(player.inventory).toEqual(["sword"]);
   });
   test('should remove item from inventory', () => {
-    player.inventory = ['sword', 'gems', 'key']
-    player.removeItem('gems')
-    expect(player.inventory).toEqual(['sword', 'key'])
-  })
+    player.inventory = ['sword', 'gems', 'key'];
+    player.removeItem('gems');
+    expect(player.inventory).toEqual(['sword', 'key']);
+  });
 });
   
 
