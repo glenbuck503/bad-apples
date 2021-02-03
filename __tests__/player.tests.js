@@ -25,7 +25,7 @@ describe('Player', () => {
   test('should remove item from inventory', () => {
     player.inventory = ['sword', 'gems', 'key']
     player.removeItem('gems')
-    expect(player.inventory).toEqual(['sword', 'gems', 'key'])
+    expect(player.inventory).toEqual(['sword', 'key'])
   })
 });
   
