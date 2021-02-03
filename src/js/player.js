@@ -3,4 +3,10 @@ export default class Player {
   this.score = 0;
   this.health = 100;
   }
+
+  addScore(points) {
+    this.score += points;
+  }
+
 }
+
