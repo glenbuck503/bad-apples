@@ -8,7 +8,7 @@ describe('Player', () => {
   });
   
   test('should create a player object', () => {
-    expect(player).toEqual({score: 2, health: 100})
+    expect(player).toEqual({score: 0, health: 100})
     
   });
 });
