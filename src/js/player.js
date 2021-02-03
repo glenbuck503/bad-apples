@@ -14,7 +14,9 @@ export default class Player {
   addItem(item) {
     this.inventory.push(item);
   }
-  
+  removeItem(item) {
+    this.inventory.splice(this.inventory.indexOf(item), 1);
+  }
 
 }
 
