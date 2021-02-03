@@ -8,6 +8,6 @@ describe('Input', () => {
   });
 
   test('create input object', () => {
-    expect(input).toEqual();
+    expect(input).toEqual({"disabled": false, "elementId": "input", "value": ""});
   })
 })
