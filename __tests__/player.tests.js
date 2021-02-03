@@ -13,6 +13,10 @@ describe('Player', () => {
   test('should add points to player score', () => {
     player.addScore(5);
     expect(player.score).toEqual(5)
+  });
+  test('should minus from player health', () => {
+    player.takeDamage(25);
+    expect(player.health).toEqual(26)
   })
 });
   

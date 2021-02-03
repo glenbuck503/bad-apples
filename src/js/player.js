@@ -7,6 +7,10 @@ export default class Player {
   addScore(points) {
     this.score += points;
   }
+  takeDamage(hit) {
+    this.health -= hit;
+  }
+  
 
 }
 
