@@ -8,7 +8,7 @@ describe('Player', () => {
   });
   
   test('should create a player object', () => {
-    expect(player).toEqual({score: 0, health: 100})
+    expect(player).toEqual({score: 0, health: 100, inventory: []})
   });
   test('should add points to player score', () => {
     player.addScore(5);
@@ -16,7 +16,11 @@ describe('Player', () => {
   });
   test('should minus from player health', () => {
     player.takeDamage(25);
-    expect(player.health).toEqual(75)
+    expect(player.health).toEqual(75);
+  });
+  test('should add item to inventory', () => {
+    player.addItem("sword");
+    expect(player.inventory).toEqual(["hammer"])
   })
 });
   
