@@ -12,7 +12,8 @@ export default class Player {
     if (this.health > 0) {
       this.health -= hit;
     } else if (this.health <= 0) {
-      alert("YOU DEAD")
+      alert("YOU DEAD");
+      location.reload();
     }
   }
   removeDamage(hit) {
