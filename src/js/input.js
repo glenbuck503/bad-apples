@@ -4,4 +4,16 @@ export default class Input {
     this.value = value;
     this.elementId = elementId;
   }
+  enable() {
+    this.disabled = false;
+    document.getElementById('input').disabled = false;
+  }
+  disable() {
+    this.disabled = true;
+    document.getElementById('input').disabled = true;
+  }
+  send(value) {
+    value = value.toLowerCase();
+    this.value = value;
+  }
 }

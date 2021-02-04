@@ -9,7 +9,14 @@ export default class Player {
     this.score += points;
   }
   takeDamage(hit) {
-    this.health -= hit;
+    if (this.health > 0) {
+      this.health -= hit;
+    } else if (this.health === 0) {
+      alert("YOU DEAD")
+    }
+  }
+  removeDamage(hit) {
+    this.health += hit;
   }
   addItem(item) {
     this.inventory.push(item);
