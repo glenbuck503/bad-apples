@@ -11,7 +11,7 @@ export default class Player {
   takeDamage(hit) {
     if (this.health > 0) {
       this.health -= hit;
-    } else if (this.health === 0) {
+    } else if (this.health <= 0) {
       alert("YOU DEAD")
     }
   }

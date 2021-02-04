@@ -7,18 +7,31 @@
 </head>
 <body>
   <div class="container">
+    <div class ="prompt1">
     <p>Which way do you want to turn?</p>
     <form id="playerForm">
       <select id="direction">
         <option value="left">Left</option>
         <option value="right">Right</option>
       </select>
-      <button id ="playerButton" type="submit" class="btn btn-info">play</button>
+      <button id ="playerButton" type="submit" class="btn btn-info">Turn</button>
     </form>
+  </div>
+  <div class ="prompt2">
+    <p>You have made it to the hallway. Which door would you like to open</p>
+    <form id="prompt2">
+      <select id="door">
+        <option value="one">Door #1</option>
+        <option value="two">Door #2</option>
+        <option value="three">Door #3</option>
+      </select>
+      <button id ="playerButton" type="submit" class="btn btn-info">Open Door</button>
+    </form>
+  </div>
     <div class="playerStats">
-    
-      <p><span id="playerHealth">100</span></p>
-      <p><span id="playerInventory"></span></p>
+      <p>Player Health: <span id="playerHealth">100</span></p>
+      <p>Inventory: <span id="playerInventory"></span></p>
+      <p>Player Score: <span id="playerScore">0</span></p>
     </div>
   </div>
 </body>
