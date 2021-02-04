@@ -6,10 +6,12 @@ export default class Game {
   constructor() {
     this.action = undefined;
   }
-  gameAction(action) {
-  if (action === 'left') {
+  gameAction() {
+  if (this.action === 'left') {
     player.takeDamage(50);
-    console.log(player);
+    player.addItem("SWORD");
+    }
+    document.getElementById('playerHealth').innerHTML = player.health;
+    document.getElementById('playerInventory').innerHTML = player.inventory.join(" ");
   }
-}
 }

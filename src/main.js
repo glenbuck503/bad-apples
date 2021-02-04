@@ -3,16 +3,23 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Game from './js/game.js';
+import Player from './js/player';
 
 
-let game = new Game();
+
 
 $(document).ready(function() {
   $('form#playerForm').submit(function(event) {
     event.preventDefault();
+    let game = new Game();
     
-    let playerTurn = $("select#direction").val();
-    playerTurn.gameAction();
+    
+    game.action = $("select#direction").val();
+    game.gameAction();
+
+    $(".playerStats").show();
+    console.log(player)
+
     
   
   });
